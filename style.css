@@ -1,3 +1,8 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -6,10 +11,18 @@ canvas {
 }
 
 h1 {
-  position: absolute;
+  grid-column: 4 / 8;
   z-index: 10;
   margin: auto;
   color: rgb(0, 187, 0);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 200px;
+}
+
+article {
+  grid-column: 2 / span 2;
+  top: 2000px;
+  z-index: 10;
+  color: red;
+  font-size: 50px;
 }

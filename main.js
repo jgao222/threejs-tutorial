@@ -1,7 +1,7 @@
 import "./style.css";
 
 import * as THREE from "three";
-import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+// import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 
 
 const scene = new THREE.Scene();
@@ -38,8 +38,17 @@ const gridHelper = new THREE.GridHelper(2000, 100);
 scene.add(lightHelper, gridHelper);
 
 
-const controls = new OrbitControls(camera, renderer.domElement);
+// const controls = new OrbitControls(camera, renderer.domElement);
 
+document.body.onscroll = () => {
+  fun();
+}
+
+function fun() {
+  camera.position.x += 1;
+  camera.position.y += 1;
+  camera.position.z += 1;
+}
 
 function animate() {
   requestAnimationFrame(animate);
@@ -48,7 +57,7 @@ function animate() {
   box.rotation.y += 0.1;
   box.rotation.z += 0.1;
 
-  controls.update();
+  // controls.update();
 
   renderer.render(scene, camera);
 }
