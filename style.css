@@ -1,0 +1,15 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+h1 {
+  position: absolute;
+  z-index: 10;
+  margin: auto;
+  color: rgb(0, 187, 0);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 200px;
+}
