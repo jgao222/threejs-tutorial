@@ -3,7 +3,8 @@ node_modules
 dist
 dist-ssr
 *.local
+package-lock.json
 
 .eslintrc.json
-.linthtmlrc
+.linthtmlrc.json
 .stylelintrc.json
